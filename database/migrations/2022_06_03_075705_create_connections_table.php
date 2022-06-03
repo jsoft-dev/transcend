@@ -17,8 +17,8 @@ return new class extends Migration
             $table->id();
             $table->string('label');
             $table->string('api_key');
+            $table->string('customer');
             $table->timestamps();
-            $table->foreignId('customer_id')->references('id')->on('customers');
         });
     }
 
